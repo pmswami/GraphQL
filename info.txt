@@ -9,3 +9,9 @@ It's not just for reading data, it can also be used for writing data (mutations)
 Drawbacks of REST APIs
     Overfetching - Getting back more data than we need.
     Underfetching - Not getting enough data. May require meultiple requests to make.
+
+Apollo Explorer
+    - Similar to Postman
+    - Allows you to interactively explore your GraphQL server and see what queries/mutations are available.
+    - Provides autocomplete as you type.
+    - Can test out mutation operations.
