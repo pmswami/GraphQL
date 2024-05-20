@@ -57,3 +57,9 @@ query ExampleQuery($id:ID!) {
     }
   }
 }
+
+mutation DeletMutation($id: ID!){
+  deleteGame(id: $id) {
+    id, title, platform
+  }
+}
