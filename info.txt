@@ -18,3 +18,42 @@ Apollo Explorer
 
 typedefs -
     In GraphQL, typeDefs is a string or a schema language document that describes the data structure of your GraphQL API. It defines the available types, their fields, and the relationships between them, including object types, scalar types, input types, interfaces, unions, and enumerations
+
+Sample Queries
+query ExampleQuery($id:ID!) {
+  review(id:$id){
+    rating,
+    content,
+    game {
+      title,platform, reviews {
+        content, rating
+      }
+    },
+    author {
+      name,
+      verified
+    }
+  }
+}
+
+
+
+query ExampleQuery($id:ID!) {
+  # review(id:$id){
+  #   rating, content
+  # }
+  # game(id: $id){
+  #   title,
+  #   reviews {
+  #     rating
+  #     content
+  #   }
+  # }
+  author(id: $id) {
+    name,
+    reviews {
+      rating,
+      content
+    }
+  }
+}
