@@ -15,3 +15,6 @@ Apollo Explorer
     - Allows you to interactively explore your GraphQL server and see what queries/mutations are available.
     - Provides autocomplete as you type.
     - Can test out mutation operations.
+
+typedefs -
+    In GraphQL, typeDefs is a string or a schema language document that describes the data structure of your GraphQL API. It defines the available types, their fields, and the relationships between them, including object types, scalar types, input types, interfaces, unions, and enumerations
