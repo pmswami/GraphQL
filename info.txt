@@ -63,3 +63,17 @@ mutation DeletMutation($id: ID!){
     id, title, platform
   }
 }
+
+
+mutation DeletMutation($edits: EditGameInput!, $id: ID!){
+  updateGame(edits: $edits, id: $id) {
+    title, platform
+  }
+}
+
+
+mutation DeletMutation($edits: EditGameInput!, $id: ID!){
+  updateGame(edits: $edits, id: $id) {
+    title, platform
+  }
+}
